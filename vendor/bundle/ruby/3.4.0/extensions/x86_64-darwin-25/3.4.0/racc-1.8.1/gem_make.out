@@ -1,0 +1,18 @@
+current directory: /Users/tomaszdebek/Applications_M1/Fast_Code_App/Burger_Shop/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+/Users/tomaszdebek/.rbenv/versions/3.4.8/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/tomaszdebek/Applications_M1/Fast_Code_App/Burger_Shop/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260929-5027-6ji77a sitelibdir\=./.gem.20260929-5027-6ji77a clean
+
+current directory: /Users/tomaszdebek/Applications_M1/Fast_Code_App/Burger_Shop/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260929-5027-6ji77a sitelibdir\=./.gem.20260929-5027-6ji77a
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/tomaszdebek/Applications_M1/Fast_Code_App/Burger_Shop/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260929-5027-6ji77a sitelibdir\=./.gem.20260929-5027-6ji77a install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20260929-5027-6ji77a/racc
+
+current directory: /Users/tomaszdebek/Applications_M1/Fast_Code_App/Burger_Shop/vendor/bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260929-5027-6ji77a sitelibdir\=./.gem.20260929-5027-6ji77a clean

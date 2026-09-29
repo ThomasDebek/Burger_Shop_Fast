@@ -1,0 +1,18 @@
+current directory: /Users/tomaszdebek/Applications_M1/Fast_Code_App/Burger_Shop/vendor/bundle/ruby/3.4.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/tomaszdebek/.rbenv/versions/3.4.8/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/tomaszdebek/Applications_M1/Fast_Code_App/Burger_Shop/vendor/bundle/ruby/3.4.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20260929-5027-1x9c9v sitelibdir\=./.gem.20260929-5027-1x9c9v clean
+
+current directory: /Users/tomaszdebek/Applications_M1/Fast_Code_App/Burger_Shop/vendor/bundle/ruby/3.4.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20260929-5027-1x9c9v sitelibdir\=./.gem.20260929-5027-1x9c9v
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/tomaszdebek/Applications_M1/Fast_Code_App/Burger_Shop/vendor/bundle/ruby/3.4.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20260929-5027-1x9c9v sitelibdir\=./.gem.20260929-5027-1x9c9v install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20260929-5027-1x9c9v/skiptrace/internal
+
+current directory: /Users/tomaszdebek/Applications_M1/Fast_Code_App/Burger_Shop/vendor/bundle/ruby/3.4.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20260929-5027-1x9c9v sitelibdir\=./.gem.20260929-5027-1x9c9v clean

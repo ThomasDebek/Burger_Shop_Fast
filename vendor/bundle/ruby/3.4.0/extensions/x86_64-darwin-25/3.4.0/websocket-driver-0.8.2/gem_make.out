@@ -1,0 +1,18 @@
+current directory: /Users/tomaszdebek/Applications_M1/Fast_Code_App/Burger_Shop/vendor/bundle/ruby/3.4.0/gems/websocket-driver-0.8.2/ext/websocket-driver
+/Users/tomaszdebek/.rbenv/versions/3.4.8/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/tomaszdebek/Applications_M1/Fast_Code_App/Burger_Shop/vendor/bundle/ruby/3.4.0/gems/websocket-driver-0.8.2/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20260929-5027-ez9rfa sitelibdir\=./.gem.20260929-5027-ez9rfa clean
+
+current directory: /Users/tomaszdebek/Applications_M1/Fast_Code_App/Burger_Shop/vendor/bundle/ruby/3.4.0/gems/websocket-driver-0.8.2/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20260929-5027-ez9rfa sitelibdir\=./.gem.20260929-5027-ez9rfa
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/tomaszdebek/Applications_M1/Fast_Code_App/Burger_Shop/vendor/bundle/ruby/3.4.0/gems/websocket-driver-0.8.2/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20260929-5027-ez9rfa sitelibdir\=./.gem.20260929-5027-ez9rfa install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20260929-5027-ez9rfa
+
+current directory: /Users/tomaszdebek/Applications_M1/Fast_Code_App/Burger_Shop/vendor/bundle/ruby/3.4.0/gems/websocket-driver-0.8.2/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20260929-5027-ez9rfa sitelibdir\=./.gem.20260929-5027-ez9rfa clean

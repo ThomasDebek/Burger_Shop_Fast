@@ -1,0 +1,19 @@
+current directory: /Users/tomaszdebek/Applications_M1/Fast_Code_App/Burger_Shop/vendor/bundle/ruby/3.4.0/gems/debug-1.11.1/ext/debug
+/Users/tomaszdebek/.rbenv/versions/3.4.8/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/tomaszdebek/Applications_M1/Fast_Code_App/Burger_Shop/vendor/bundle/ruby/3.4.0/gems/debug-1.11.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20260929-5027-tuh0wj sitelibdir\=./.gem.20260929-5027-tuh0wj clean
+
+current directory: /Users/tomaszdebek/Applications_M1/Fast_Code_App/Burger_Shop/vendor/bundle/ruby/3.4.0/gems/debug-1.11.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20260929-5027-tuh0wj sitelibdir\=./.gem.20260929-5027-tuh0wj
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.bundle
+
+current directory: /Users/tomaszdebek/Applications_M1/Fast_Code_App/Burger_Shop/vendor/bundle/ruby/3.4.0/gems/debug-1.11.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20260929-5027-tuh0wj sitelibdir\=./.gem.20260929-5027-tuh0wj install
+/usr/bin/install -c -m 0755 debug.bundle ./.gem.20260929-5027-tuh0wj/debug
+
+current directory: /Users/tomaszdebek/Applications_M1/Fast_Code_App/Burger_Shop/vendor/bundle/ruby/3.4.0/gems/debug-1.11.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20260929-5027-tuh0wj sitelibdir\=./.gem.20260929-5027-tuh0wj clean
