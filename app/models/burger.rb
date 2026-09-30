@@ -9,8 +9,9 @@ class Burger < ApplicationRecord
   validates :size, inclusion: { in: SIZES }, presence: true
 
   def available?
-    @stock > 0
+    stock > 0
   end
+
 
   def size_price
     if size == "small"
