@@ -1,10 +1,24 @@
-<p style="color: green"><%= notice %></p>
+<h2 id="extras">Extras</h2>
 
-<%= render @burger %>
+<% if @extras.any? %>
+  <% @extras.each do |extra| %>
+    <div>
+      <p>
+        <strong><%= extra.name %></strong>
+        —
+        <%= extra.price %> PLN
+      </p>
 
-<div>
-  <%= link_to "Edit this burger", edit_burger_path(@burger) %> |
-  <%= link_to "Back to burgers", burgers_path %>
+      <%= link_to "Edit ingredient",
+                  edit_burger_extra_path(@burger, extra) %>
 
-  <%= button_to "Destroy this burger", @burger, method: :delete %>
-</div>
+      <%= button_to "Remove ingredient",
+                    burger_extra_path(@burger, extra),
+                    method: :delete %>
+    </div>
+
+    <hr>
+  <% end %>
+<% else %>
+  <p>No extras. Add an ingredient using the form below.</p>
+<% end %>

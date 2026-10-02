@@ -8,6 +8,8 @@ class BurgersController < ApplicationController
 
   # GET /burgers/1 or /burgers/1.json
   def show
+    @extras = @burger.extras.to_a.select(&:persisted?)
+    @extra = @burger.extras.build
   end
 
   # GET /burgers/new

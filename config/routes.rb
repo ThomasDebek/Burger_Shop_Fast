@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root "burgers#index"
   resources :burgers do
-    resources :extras, only: [:show, :create, :update, :destroy]
+    resources :extras, only: [:create, :destroy, :edit, :update]
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

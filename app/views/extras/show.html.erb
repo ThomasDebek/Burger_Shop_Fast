@@ -1,127 +1,22 @@
-<h1>Ala mam kota</h1>
-<h1><%= @burger.name %></h1>
-
-<hr>
-
-<h2>Burger information</h2>
-
-<p>
-  <strong>Base price:</strong>
-  <%= @burger.price %> PLN
-</p>
-
-<p>
-  <strong>Size:</strong>
-  <%= @burger.size %>
-</p>
-
-<p>
-  <strong>Price with size:</strong>
-  <%= @burger.size_price %> PLN
-</p>
-
-<p>
-  <strong>Stock:</strong>
-  <%= @burger.stock %>
-</p>
-
-<p>
-  <strong>Status:</strong>
-
-  <% if @burger.available? %>
-    Available
-  <% else %>
-    Out of stock
-  <% end %>
-</p>
-
-<p>
-  <strong>Score:</strong>
-  <%= @burger.score %>
-</p>
-
-<p>
-  <strong>Rating:</strong>
-  <%= @burger.rating %>
-</p>
-
-<hr>
-
 <h2>Extras</h2>
 
-<% if @burger.extras.persisted.any? %>
+<% if @extras.any? %>
+  <% @extras.each do |extra| %>
+    <div>
+      <p>
+        <%= extra.name %>
+        -
+        <%= extra.price %> PLN
+      </p>
 
-  <% @burger.extras.persisted.each do |extra| %>
-
-    <p>
-      <%= extra.name %>
-      -
-      <%= extra.price %> PLN
+      <%= link_to "Edit",
+                  edit_burger_extra_path(@burger, extra) %>
 
       <%= button_to "Remove",
                     burger_extra_path(@burger, extra),
                     method: :delete %>
-    </p>
-
+    </div>
   <% end %>
-
 <% else %>
-
   <p>No extras.</p>
-
 <% end %>
-
-<hr>
-
-<h2>Add extra</h2>
-
-<%= form_with model: [@burger, @extra] do |form| %>
-
-  <div>
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
-
-  <div>
-    <%= form.label :price %>
-    <%= form.number_field :price, step: 0.01 %>
-  </div>
-
-  <div>
-    <%= form.submit "Add extra" %>
-  </div>
-
-<% end %>
-
-<hr>
-
-<h2>Extra statistics</h2>
-
-<p>
-  <strong>Cheapest extra:</strong>
-
-  <% cheapest = @burger.cheapest_extra %>
-
-  <% if cheapest %>
-    <%= cheapest.name %> -
-    <%= cheapest.price %> PLN
-  <% else %>
-    No extras
-  <% end %>
-</p>
-
-<p>
-  <strong>Average extra price:</strong>
-  <%= @burger.average_extra_price %> PLN
-</p>
-
-<p>
-  <strong>Total:</strong>
-  <%= @burger.total_price %> PLN
-</p>
-
-<hr>
-
-<%= link_to "Edit burger", edit_burger_path(@burger) %>
-
-<%= link_to "Back to burgers", burgers_path %>

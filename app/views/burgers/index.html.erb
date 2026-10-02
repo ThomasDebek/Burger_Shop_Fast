@@ -7,8 +7,13 @@
 <div id="burgers">
   <% @burgers.each do |burger| %>
     <%= render burger %>
+
     <p>
-      <%= link_to "Show this burger", burger %>
+      <%= link_to "Show this burger", burger_path(burger) %>
+    </p>
+
+    <p>
+      <%= link_to "Extras", burger_path(burger, anchor: "extras") %>
     </p>
   <% end %>
 </div>

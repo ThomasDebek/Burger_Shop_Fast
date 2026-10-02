@@ -1,0 +1,38 @@
+<h1>Edit extra</h1>
+
+<p>
+  <strong>Burger:</strong>
+  <%= @burger.name %>
+</p>
+
+<% if @extra.errors.any? %>
+  <div>
+    <h2>Could not save extra:</h2>
+
+    <ul>
+      <% @extra.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= form_with model: [@burger, @extra] do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :price %>
+    <%= form.number_field :price, step: 0.01 %>
+  </div>
+
+  <div>
+    <%= form.submit "Save changes" %>
+  </div>
+<% end %>
+
+<hr>
+
+<%= link_to "Back to burger", burger_path(@burger) %>

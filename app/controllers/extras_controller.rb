@@ -1,10 +1,6 @@
 class ExtrasController < ApplicationController
-  before_action :set_burger, only: %i[create destroy]
-  before_action :set_extra, only: %i[destroy]
-
-  def show
-    @extra = @burger.extras.build
-  end
+  before_action :set_burger
+  before_action :set_extra, only: %i[edit update destroy]
 
   def create
     @extra = @burger.extras.build(extra_params)
@@ -13,6 +9,17 @@ class ExtrasController < ApplicationController
       redirect_to @burger, notice: "Extra was successfully created."
     else
       redirect_to @burger, alert: @extra.errors.full_messages.to_sentence
+    end
+  end
+
+  def edit
+  end
+
+  def update
+    if @extra.update(extra_params)
+      redirect_to @burger, notice: "Extra was successfully updated."
+    else
+      render :edit, status: :unprocessable_entity
     end
   end
 
